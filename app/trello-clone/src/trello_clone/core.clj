@@ -14,6 +14,6 @@
 (defn -main [& args]
   (let [port 8080]
     (run-server app-routes {:port port})
-    (println (format "Server is running on port %d" 8080))
+    (println (format "Server is running on port %d" port))
   )
 )
