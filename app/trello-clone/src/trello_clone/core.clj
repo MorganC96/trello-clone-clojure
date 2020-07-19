@@ -13,8 +13,14 @@
   (route/not-found (http-utils/not-found-response { "statusCode" "404" }))
 )
 
+(defn parse-int [number-string]
+  (try (Integer/parseInt number-string)
+    (catch Exception e nil)))
+
+(def port-env-var (parse-int (System/getenv "PORT")))
+
 (defn -main [& args]
-  (let [port 8080]
+  (let [port (if port-env-var port-env-var 8080 )]
     (run-server app-routes {:port port})
     (println (format "Server is running on port %d" port))
   )
