@@ -5,6 +5,8 @@
     [http-kit "2.3.0"]
     [compojure "1.6.1"]
     [org.clojure/data.json "1.0.0"]
+    [seancorfield/next.jdbc "1.1.569"]
+    [mysql/mysql-connector-java "8.0.21"]
   ]
   :main ^:skip-aot trello-clone.core
   :target-path "target/%s"

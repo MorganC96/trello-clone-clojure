@@ -3,11 +3,13 @@
     [compojure.core :refer :all]
     [compojure.route :as route]
     [trello-clone.handlers.board-handler :as board-handler]
+    [trello-clone.handlers.ticket-handler :as ticket-handler]
     [trello-clone.http-utils :as http-utils])
   (:gen-class))
 
 (defroutes app-routes
   (GET "/board/:id" [] board-handler/handle-get)
+  (GET "/ticket/:id" [] ticket-handler/handle-get)
   (route/not-found (http-utils/not-found-response { "statusCode" "404" }))
 )
 

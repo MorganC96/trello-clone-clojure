@@ -2,13 +2,15 @@ version: '3'
 
 services:
   mysql:
-    image: mysql:8.0.17
+    build: db
     environment:
       MYSQL_ROOT_PASSWORD: toor
       MYSQL_DATABASE: app
+      MYSQL_USER: user
+      MYSQL_PASSWORD: my-secret-password
     expose:
       - "3306"
   app:
-    build: .
+    build: app
     ports: 
       - "8080:8080"
