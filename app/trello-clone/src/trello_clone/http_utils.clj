@@ -4,6 +4,9 @@
 (defn- json-content-type [map] 
     (merge map { "Content-Type" "application/json" } ))
 
+(defn get-id-param [req] 
+    (get-in req [:params :id]))
+
 (defn ok-response [body] 
 {
     :status 200
