@@ -18,6 +18,7 @@ export default (props) => {
         height: 100%;
         padding: 10px;
         box-sizing: border-box;
+        cursor: pointer;
     `
 
     const Content = styled.div`
