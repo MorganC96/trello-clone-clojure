@@ -13,21 +13,31 @@ const getCards = cards => {
     }
 }
 
+const Container = styled.div`
+    min-width: 400px;
+    max-width: 400px;
+    width: 400px;
+    min-height: 100px;
+    max-height: 100%;
+    background-color: #E9E8EB;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+`
+
+const CardContainer = styled.div`
+    overflow-y: auto;
+`
+
 export default (props) => {
-    const Container = styled.div`
-        min-width: 400px;
-        max-width: 400px;
-        width: 400px;
-        min-height: 100px;
-        background-color: #E9E8EB;
-        box-sizing: border-box;
-        background-clip: content-box;
-        padding: 10px;
-        border-radius: 10px;
-    `
 
     return (<Container>
         <LaneHeader text={props.name}/>
-        {getCards(props.cards)}
+        <CardContainer>
+            {getCards(props.cards)}
+        </CardContainer>
     </Container>);
 }

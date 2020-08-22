@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Lane from './lane';
 
 const Container = styled.div`
+    height: 100%;
     flex: 1;
     display: flex;
     flex-direction: row;

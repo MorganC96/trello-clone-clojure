@@ -32,6 +32,30 @@ const getLanes = () => {
         {
           name: "Card 4",
           content: "Example card"
+        },
+        {
+          name: "Card 3",
+          content: "Example card"
+        },
+        {
+          name: "Card 4",
+          content: "Example card"
+        },
+        {
+          name: "Card 3",
+          content: "Example card"
+        },
+        {
+          name: "Card 4",
+          content: "Example card"
+        },
+        {
+          name: "Card 3",
+          content: "Example card"
+        },
+        {
+          name: "Card 4",
+          content: "Example card"
         }
       ]
     },

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const headerHeightPx = 40;
+const headerHeightPx = 50;
 const headerPadding = 10;
 
 const Container = styled.div`
