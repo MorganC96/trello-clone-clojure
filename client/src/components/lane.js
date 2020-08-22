@@ -18,7 +18,6 @@ export default (props) => {
         min-width: 400px;
         max-width: 400px;
         width: 400px;
-        max-height: 100%;
         min-height: 100px;
         background-color: #E9E8EB;
         box-sizing: border-box;
